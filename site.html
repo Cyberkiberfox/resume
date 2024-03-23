@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <style>
+        .header{border-bottom: 2px solid green;}
+        .card{background-color: aquamarine;
+        padding: 10px;
+    margin-bottom: 10px ;}
+    .color{color: red;}
+    </style>
+</head>
+<body>
+    <!-- вместо div можно написать header  и поисковые роботы лучше будут понимать сайт  по семантике nav article section -->
+    <!-- span работает как div  но не переносит блок на новую строку а оборачивает внутри блока  -->
+    <!-- class можно использовать в нескольких тегах одинаково и удобны для стилистики в css -->
+<!-- id должен быть уникальным для каждого элемента -->
+    <header id="header" class="header">
+        <h2>Site</h2>
+      </header>
+
+    <nav id="navigation">
+        <ul>
+            <li> <a href="#">item 1</a></li>
+            <li> <a href="#">item 2</a></li>
+            <li> <a href="#">item 3</a></li>
+        </ul>
+    </nav>
+
+   <hr>
+   <section>
+    <article id="block1" class="card header" >
+        <h3>block 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <div class="color"> adipisicing elit. A, officia officiis</div> dignissimos doloremque modi consectetur doloribus eligendi odio excepturi possimus fugiat debitis ullam, ipsam enim animi. Voluptas provident doloribus nam accusamus corporis, eum commodi rem reiciendis officia aliquid placeat possimus eius quos a ab laboriosam ipsam est magni ipsa asperiores quisquam cumque nesciunt. Mollitia modi ipsam repellat quos aperiam?</p>
+    </article>
+
+  
+    <article id="block2" class="card">
+        <h3>block 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <span class="color"> adipisicing elit. A, officia officiis dignissimos doloremque modi consectetur doloribus eligendi odio excepturi possimus fugiat debitis ullam, ipsam enim animi. Voluptas provident doloribus nam accusamus corporis, eum commodi rem reiciendis officia aliquid placeat possimus eius quos a ab laboriosam ipsam est magni ipsa asperiores quisquam cumque nesciunt.</span> Mollitia modi ipsam repellat quos aperiam?</p>
+    </article>
+</section>
+<hr>
+<!-- <aside></aside>  для меню на сайте -->
+    <footer id="footer">
+        <h4>Contact me</h4>
+      <ul>
+        <li>Instagram</li>
+        <li>VK</li>
+        <li>Facebook</li>
+        <li>Telegram</li>
+      </ul>
+      </footer>
+
+      <!-- <div class=""></div> div. -->
+      <!-- <span class=""></span>  span.-->
+      <!-- <div id="app"></div> div#app -->
+      <!-- <div class="" id=""></div> .# -->
+</body>
+</html>
